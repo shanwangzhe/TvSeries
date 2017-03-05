@@ -9,13 +9,12 @@
 namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
-
 /**
  * User Episode.
  *
  * Class User_Episode
  *
- * @ORM\Entity(repositoryClass="User_EpisodeRepository")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\User_EpisodeRepository")
  */
 class User_Episode
 {

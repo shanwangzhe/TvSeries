@@ -21,29 +21,29 @@ class __TwigTemplate_6354b23d0110604d150417c54ea0a0d6772cf4f5576d3b1c1f4b896daf9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ef612ffb38f3c46d9b5e11425af2d68daa9e5d99f5e21f0eb508e5b24724f75a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ef612ffb38f3c46d9b5e11425af2d68daa9e5d99f5e21f0eb508e5b24724f75a->enter($__internal_ef612ffb38f3c46d9b5e11425af2d68daa9e5d99f5e21f0eb508e5b24724f75a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "episode/index.html.twig"));
+        $__internal_21c3de9f4e1db417c3f98571d1fb6dd7007ef2e5e661e30111580051bf89cbe2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_21c3de9f4e1db417c3f98571d1fb6dd7007ef2e5e661e30111580051bf89cbe2->enter($__internal_21c3de9f4e1db417c3f98571d1fb6dd7007ef2e5e661e30111580051bf89cbe2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "episode/index.html.twig"));
 
-        $__internal_20723f244dc633eedb5f23d7a905664b0f187c013eeaed2bde42f927094c82bf = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_20723f244dc633eedb5f23d7a905664b0f187c013eeaed2bde42f927094c82bf->enter($__internal_20723f244dc633eedb5f23d7a905664b0f187c013eeaed2bde42f927094c82bf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "episode/index.html.twig"));
+        $__internal_08c71ca2685aeed389ff57583634cc274c657b75583e40dd41b2e63f8a427728 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_08c71ca2685aeed389ff57583634cc274c657b75583e40dd41b2e63f8a427728->enter($__internal_08c71ca2685aeed389ff57583634cc274c657b75583e40dd41b2e63f8a427728_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "episode/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ef612ffb38f3c46d9b5e11425af2d68daa9e5d99f5e21f0eb508e5b24724f75a->leave($__internal_ef612ffb38f3c46d9b5e11425af2d68daa9e5d99f5e21f0eb508e5b24724f75a_prof);
+        $__internal_21c3de9f4e1db417c3f98571d1fb6dd7007ef2e5e661e30111580051bf89cbe2->leave($__internal_21c3de9f4e1db417c3f98571d1fb6dd7007ef2e5e661e30111580051bf89cbe2_prof);
 
         
-        $__internal_20723f244dc633eedb5f23d7a905664b0f187c013eeaed2bde42f927094c82bf->leave($__internal_20723f244dc633eedb5f23d7a905664b0f187c013eeaed2bde42f927094c82bf_prof);
+        $__internal_08c71ca2685aeed389ff57583634cc274c657b75583e40dd41b2e63f8a427728->leave($__internal_08c71ca2685aeed389ff57583634cc274c657b75583e40dd41b2e63f8a427728_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_fbb0696a2bb14d7d07e72f4ad39051d394ee078da618b6da7d75f193b61883c2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_fbb0696a2bb14d7d07e72f4ad39051d394ee078da618b6da7d75f193b61883c2->enter($__internal_fbb0696a2bb14d7d07e72f4ad39051d394ee078da618b6da7d75f193b61883c2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_67568c757d7a0a5f7de915f893258d719c0c2f3efdc37f0854e09bfd840d90d2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_67568c757d7a0a5f7de915f893258d719c0c2f3efdc37f0854e09bfd840d90d2->enter($__internal_67568c757d7a0a5f7de915f893258d719c0c2f3efdc37f0854e09bfd840d90d2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_ccf0d613b911baa38a7b9d6adb9eca8f42f6178bf2b99079918c3d2db96ef675 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ccf0d613b911baa38a7b9d6adb9eca8f42f6178bf2b99079918c3d2db96ef675->enter($__internal_ccf0d613b911baa38a7b9d6adb9eca8f42f6178bf2b99079918c3d2db96ef675_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_e4ef41441e5593a34099e2f8c0351b68b60ad3c3abb72d93eb08511adf1c0813 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e4ef41441e5593a34099e2f8c0351b68b60ad3c3abb72d93eb08511adf1c0813->enter($__internal_e4ef41441e5593a34099e2f8c0351b68b60ad3c3abb72d93eb08511adf1c0813_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "   <h1>";
@@ -88,7 +88,7 @@ class __TwigTemplate_6354b23d0110604d150417c54ea0a0d6772cf4f5576d3b1c1f4b896daf9
                         <li>
                             <a href=\"";
             // line 25
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_index", array("id" => $this->getAttribute($context["e"], "id", array()))), "html", null, true);
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_userEpisodeNew", array("id" => $this->getAttribute($context["e"], "id", array()))), "html", null, true);
             echo "\">watch</a>
                         </li>
                     </ul>
@@ -113,10 +113,10 @@ class __TwigTemplate_6354b23d0110604d150417c54ea0a0d6772cf4f5576d3b1c1f4b896daf9
     </ul>
 ";
         
-        $__internal_ccf0d613b911baa38a7b9d6adb9eca8f42f6178bf2b99079918c3d2db96ef675->leave($__internal_ccf0d613b911baa38a7b9d6adb9eca8f42f6178bf2b99079918c3d2db96ef675_prof);
+        $__internal_e4ef41441e5593a34099e2f8c0351b68b60ad3c3abb72d93eb08511adf1c0813->leave($__internal_e4ef41441e5593a34099e2f8c0351b68b60ad3c3abb72d93eb08511adf1c0813_prof);
 
         
-        $__internal_fbb0696a2bb14d7d07e72f4ad39051d394ee078da618b6da7d75f193b61883c2->leave($__internal_fbb0696a2bb14d7d07e72f4ad39051d394ee078da618b6da7d75f193b61883c2_prof);
+        $__internal_67568c757d7a0a5f7de915f893258d719c0c2f3efdc37f0854e09bfd840d90d2->leave($__internal_67568c757d7a0a5f7de915f893258d719c0c2f3efdc37f0854e09bfd840d90d2_prof);
 
     }
 
@@ -169,7 +169,7 @@ class __TwigTemplate_6354b23d0110604d150417c54ea0a0d6772cf4f5576d3b1c1f4b896daf9
                 <td>
                     <ul>
                         <li>
-                            <a href=\"{{ path('_index', { 'id': e.id }) }}\">watch</a>
+                            <a href=\"{{ path('_userEpisodeNew', { 'id': e.id }) }}\">watch</a>
                         </li>
                     </ul>
                 </td>

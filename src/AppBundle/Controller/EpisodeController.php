@@ -17,7 +17,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component
 /**
  * Episode controller.
  *
- * @Route("/")
+ * @Route("/episode")
  */
 class EpisodeController extends Controller
 {
@@ -69,9 +69,9 @@ class EpisodeController extends Controller
 
 
     /**
-     * Finds and displays a tvSeries entity.
+     * Finds and displays a Episode entity.
      *
-     * @Route("/episode/{id}", name="_episodeShow")
+     * @Route("/{id}/show", name="_episodeShow")
      * @Method("GET")
      */
     public function showAction(Episode $episode)

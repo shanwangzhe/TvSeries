@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>History</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>EpisodeNumber</th>
+            <th>Description</th>
+            <th>Image</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for e in userEpisodes %}
+            <tr>
+                <td>{{ e.name }}</td>
+                <td>{{ e.episodeNumber }}</td>
+                <td>{{ e.description }}</td>
+                <td>{{ e.image }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('_userEpisodeNew', { 'id': e.id }) }}">watch</a>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('_userEpisodeDelete', { 'id': e.id }) }}">delete</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

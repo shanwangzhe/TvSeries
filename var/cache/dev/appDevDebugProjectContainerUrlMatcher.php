@@ -310,38 +310,41 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::listAction',  '_route' => 'app_default_list',);
         }
 
-        // _episodeIndex
-        if (preg_match('#^/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                $allow = array_merge($allow, array('GET', 'HEAD'));
-                goto not__episodeIndex;
+        if (0 === strpos($pathinfo, '/episode')) {
+            // _episodeIndex
+            if (preg_match('#^/episode/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not__episodeIndex;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => '_episodeIndex')), array (  '_controller' => 'AppBundle\\Controller\\EpisodeController::listAction',));
             }
+            not__episodeIndex:
 
-            return $this->mergeDefaults(array_replace($matches, array('_route' => '_episodeIndex')), array (  '_controller' => 'AppBundle\\Controller\\EpisodeController::listAction',));
-        }
-        not__episodeIndex:
+            // _episodeNew
+            if (preg_match('#^/episode/(?P<id>[^/]++)/new$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not__episodeNew;
+                }
 
-        // _episodeNew
-        if (preg_match('#^/(?P<id>[^/]++)/new$#s', $pathinfo, $matches)) {
-            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
-                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
-                goto not__episodeNew;
+                return $this->mergeDefaults(array_replace($matches, array('_route' => '_episodeNew')), array (  '_controller' => 'AppBundle\\Controller\\EpisodeController::newAction',));
             }
+            not__episodeNew:
 
-            return $this->mergeDefaults(array_replace($matches, array('_route' => '_episodeNew')), array (  '_controller' => 'AppBundle\\Controller\\EpisodeController::newAction',));
-        }
-        not__episodeNew:
+            // _episodeShow
+            if (preg_match('#^/episode/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not__episodeShow;
+                }
 
-        // _episodeShow
-        if (0 === strpos($pathinfo, '/episode') && preg_match('#^/episode/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                $allow = array_merge($allow, array('GET', 'HEAD'));
-                goto not__episodeShow;
+                return $this->mergeDefaults(array_replace($matches, array('_route' => '_episodeShow')), array (  '_controller' => 'AppBundle\\Controller\\EpisodeController::showAction',));
             }
+            not__episodeShow:
 
-            return $this->mergeDefaults(array_replace($matches, array('_route' => '_episodeShow')), array (  '_controller' => 'AppBundle\\Controller\\EpisodeController::showAction',));
         }
-        not__episodeShow:
 
         // user_registration
         if ($pathinfo === '/register') {
@@ -374,6 +377,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
         not__new:
 
+        // _show
+        if (preg_match('#^/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not__show;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => '_show')), array (  '_controller' => 'AppBundle\\Controller\\TvSeriesController::showAction',));
+        }
+        not__show:
+
         // _edit
         if (preg_match('#^/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
             if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
@@ -396,39 +410,50 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
         not__delete:
 
-        // _userEpisode
-        if (preg_match('#^/(?P<userId>[^/]++)$#s', $pathinfo, $matches)) {
-            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                $allow = array_merge($allow, array('GET', 'HEAD'));
-                goto not__userEpisode;
+        if (0 === strpos($pathinfo, '/user_episode')) {
+            // _userEpisodeIndex
+            if ($pathinfo === '/user_episode/index') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not__userEpisodeIndex;
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\User_EpisodeController::indexAction',  '_route' => '_userEpisodeIndex',);
             }
+            not__userEpisodeIndex:
 
-            return $this->mergeDefaults(array_replace($matches, array('_route' => '_userEpisode')), array (  '_controller' => 'AppBundle\\Controller\\User_EpisodeController::indexAction',));
-        }
-        not__userEpisode:
-
-        if (0 === strpos($pathinfo, '/userEpisode')) {
             // _userEpisodeNew
-            if ($pathinfo === '/userEpisode/new') {
+            if (0 === strpos($pathinfo, '/user_episode/new') && preg_match('#^/user_episode/new/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
                 if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
                     $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
                     goto not__userEpisodeNew;
                 }
 
-                return array (  '_controller' => 'AppBundle\\Controller\\User_EpisodeController::newAction',  '_route' => '_userEpisodeNew',);
+                return $this->mergeDefaults(array_replace($matches, array('_route' => '_userEpisodeNew')), array (  '_controller' => 'AppBundle\\Controller\\User_EpisodeController::newAction',));
             }
             not__userEpisodeNew:
 
-            // _show
-            if (preg_match('#^/userEpisode/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            // _userEpisodeShow
+            if (preg_match('#^/user_episode/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
                 if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
                     $allow = array_merge($allow, array('GET', 'HEAD'));
-                    goto not__show;
+                    goto not__userEpisodeShow;
                 }
 
-                return $this->mergeDefaults(array_replace($matches, array('_route' => '_show')), array (  '_controller' => 'AppBundle\\Controller\\User_EpisodeController::showAction',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => '_userEpisodeShow')), array (  '_controller' => 'AppBundle\\Controller\\User_EpisodeController::showAction',));
             }
-            not__show:
+            not__userEpisodeShow:
+
+            // _userEpisodeDelete
+            if (preg_match('#^/user_episode/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'DELETE', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'DELETE', 'HEAD'));
+                    goto not__userEpisodeDelete;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => '_userEpisodeDelete')), array (  '_controller' => 'AppBundle\\Controller\\User_EpisodeController::deleteAction',));
+            }
+            not__userEpisodeDelete:
 
         }
 
