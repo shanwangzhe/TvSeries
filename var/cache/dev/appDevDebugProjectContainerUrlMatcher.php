@@ -291,11 +291,6 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
         not_fos_user_change_password:
 
-        // app_default_admin
-        if ($pathinfo === '/admin') {
-            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::adminAction',  '_route' => 'app_default_admin',);
-        }
-
         // app_default_createseries
         if ($pathinfo === '/series/create') {
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::createSeriesAction',  '_route' => 'app_default_createseries',);
@@ -366,50 +361,6 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
         not__index:
 
-        // _new
-        if ($pathinfo === '/new') {
-            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
-                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
-                goto not__new;
-            }
-
-            return array (  '_controller' => 'AppBundle\\Controller\\TvSeriesController::newAction',  '_route' => '_new',);
-        }
-        not__new:
-
-        // _show
-        if (preg_match('#^/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                $allow = array_merge($allow, array('GET', 'HEAD'));
-                goto not__show;
-            }
-
-            return $this->mergeDefaults(array_replace($matches, array('_route' => '_show')), array (  '_controller' => 'AppBundle\\Controller\\TvSeriesController::showAction',));
-        }
-        not__show:
-
-        // _edit
-        if (preg_match('#^/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
-                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
-                goto not__edit;
-            }
-
-            return $this->mergeDefaults(array_replace($matches, array('_route' => '_edit')), array (  '_controller' => 'AppBundle\\Controller\\TvSeriesController::editAction',));
-        }
-        not__edit:
-
-        // _delete
-        if (preg_match('#^/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-            if ($this->context->getMethod() != 'DELETE') {
-                $allow[] = 'DELETE';
-                goto not__delete;
-            }
-
-            return $this->mergeDefaults(array_replace($matches, array('_route' => '_delete')), array (  '_controller' => 'AppBundle\\Controller\\TvSeriesController::deleteAction',));
-        }
-        not__delete:
-
         if (0 === strpos($pathinfo, '/user_episode')) {
             // _userEpisodeIndex
             if ($pathinfo === '/user_episode/index') {
@@ -454,6 +405,126 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return $this->mergeDefaults(array_replace($matches, array('_route' => '_userEpisodeDelete')), array (  '_controller' => 'AppBundle\\Controller\\User_EpisodeController::deleteAction',));
             }
             not__userEpisodeDelete:
+
+        }
+
+        if (0 === strpos($pathinfo, '/admin')) {
+            // _adminIndex
+            if (rtrim($pathinfo, '/') === '/admin') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not__adminIndex;
+                }
+
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', '_adminIndex');
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\Backend\\AdminController::indexAction',  '_route' => '_adminIndex',);
+            }
+            not__adminIndex:
+
+            // _new
+            if ($pathinfo === '/admin/new') {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not__new;
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\Backend\\AdminController::newAction',  '_route' => '_new',);
+            }
+            not__new:
+
+            // _show
+            if (preg_match('#^/admin/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not__show;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => '_show')), array (  '_controller' => 'AppBundle\\Controller\\Backend\\AdminController::showAction',));
+            }
+            not__show:
+
+            // _edit
+            if (preg_match('#^/admin/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not__edit;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => '_edit')), array (  '_controller' => 'AppBundle\\Controller\\Backend\\AdminController::editAction',));
+            }
+            not__edit:
+
+            // _delete
+            if (preg_match('#^/admin/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if ($this->context->getMethod() != 'DELETE') {
+                    $allow[] = 'DELETE';
+                    goto not__delete;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => '_delete')), array (  '_controller' => 'AppBundle\\Controller\\Backend\\AdminController::deleteAction',));
+            }
+            not__delete:
+
+            if (0 === strpos($pathinfo, '/admin/episode')) {
+                // _AEIndex
+                if (preg_match('#^/admin/episode/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not__AEIndex;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => '_AEIndex')), array (  '_controller' => 'AppBundle\\Controller\\Backend\\EpisodeController::listAction',));
+                }
+                not__AEIndex:
+
+                // _AENew
+                if (preg_match('#^/admin/episode/(?P<id>[^/]++)/new$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                        goto not__AENew;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => '_AENew')), array (  '_controller' => 'AppBundle\\Controller\\Backend\\EpisodeController::newAction',));
+                }
+                not__AENew:
+
+                // _AEEdit
+                if (preg_match('#^/admin/episode/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                        goto not__AEEdit;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => '_AEEdit')), array (  '_controller' => 'AppBundle\\Controller\\Backend\\EpisodeController::editAction',));
+                }
+                not__AEEdit:
+
+                // _AEShow
+                if (preg_match('#^/admin/episode/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not__AEShow;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => '_AEShow')), array (  '_controller' => 'AppBundle\\Controller\\Backend\\EpisodeController::showAction',));
+                }
+                not__AEShow:
+
+                // _AEDelete
+                if (preg_match('#^/admin/episode/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    if ($this->context->getMethod() != 'DELETE') {
+                        $allow[] = 'DELETE';
+                        goto not__AEDelete;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => '_AEDelete')), array (  '_controller' => 'AppBundle\\Controller\\Backend\\EpisodeController::deleteAction',));
+                }
+                not__AEDelete:
+
+            }
 
         }
 

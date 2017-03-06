@@ -12,7 +12,6 @@
         <th>Releasedat</th>
         <th>Description</th>
         <th>Image</th>
-        <th>Actions</th>
     </tr>
     </thead>
     <tbody>
@@ -23,13 +22,6 @@
             <td>{% if tvSeries.releasedAt %}{{ tvSeries.releasedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
             <td>{{ tvSeries.description }}</td>
             <td>{{ tvSeries.image }}</td>
-            <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('_show', { 'id': tvSeries.id }) }}">show</a>
-                    </li>
-                </ul>
-            </td>
         </tr>
     {% endfor %}
     </tbody>

@@ -5,6 +5,10 @@ app:
     resource: "@AppBundle/Controller/"
     type:     annotation
 
+backend:
+    resource: "@AppBundle/Controller/Backend/"
+    type:     annotation
+
 
 
 

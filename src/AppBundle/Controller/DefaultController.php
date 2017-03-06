@@ -11,14 +11,6 @@ use Symfony\Component\HttpFoundation\Response;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/admin")
-     */
-    public function adminAction()
-    {
-        return new Response('<html><body>Admin page!</body></html>');
-    }
-
-    /**
      * @Route("/series/create")
      */
     public function createSeriesAction(Request $request){
