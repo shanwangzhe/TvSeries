@@ -34,15 +34,22 @@ class User_EpisodeController extends Controller
         $em = $this->getDoctrine();//->getManager();
 
         $userEpisodes = $em->getRepository('AppBundle:User_Episode')->findByUser($userId);
-        $episodes = array();
+        $infos = array();
         foreach ($userEpisodes as $usrep){
             $eid = $usrep->getEpisodeId();
             $episode = $em->getRepository('AppBundle:Episode')->find($eid);
-            if(!($episode==null || in_array($episode,$episodes)))
-                array_push($episodes,$episode);
+            if($episode!=null ) {
+                $usrep->watched = date_format($usrep->getWatchedAt(), 'Y-m-d H:i:s');
+                $usrep->name = $episode->getName();
+                $usrep->image = $episode->getImage();
+                $usrep->description = $episode->getDescription();
+                $usrep->episodeNumber = $episode->getEpisodeNumber();
+                if(!in_array($usrep,$infos))
+                    array_push($infos, $usrep);
+            }
         }
         return $this->render('userEpisode/index.html.twig', array(
-            'userEpisodes' => $episodes,
+            'userEpisodes' => $infos,
         ));
     }
 
@@ -66,7 +73,9 @@ class User_EpisodeController extends Controller
                 $userEpisode->setEpisodeId($id);
                 $userEpisode->setUserId($userId);
             }
-            $dt = new DateTime();
+            else
+                $userEpisode = $userEpisode[0];
+            $dt = new DateTime('now');
             $dt->format('Y-m-d H:i:s');
             $userEpisode->setWatchedAt($dt);
             $em = $this->getDoctrine()->getManager();
@@ -96,14 +105,11 @@ class User_EpisodeController extends Controller
      */
     public function deleteAction($id)
     {
-        var_dump($id);
         $em = $this->getDoctrine()->getManager();
-        $userEpisodes = $em->getRepository('AppBundle:User_Episode')->findAll();
-        if($userEpisodes != null) {
-            foreach($userEpisodes as $userEpisode) {
-                $em->remove($userEpisode);
-                $em->flush($userEpisode);
-            }
+        $userEpisode = $em->getRepository('AppBundle:User_Episode')->find($id);
+        if($userEpisode != null) {
+            $em->remove($userEpisode);
+            $em->flush($userEpisode);
         }
         return $this->redirectToRoute('_userEpisodeIndex');
     }

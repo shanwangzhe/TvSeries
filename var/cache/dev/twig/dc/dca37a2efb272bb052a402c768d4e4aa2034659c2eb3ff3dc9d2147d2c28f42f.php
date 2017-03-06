@@ -15,19 +15,25 @@ class __TwigTemplate_717d69358ab1ed0da910aea4c05b2a961f3ee516b6a0813b779597e9d4f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_462ebbcb707a58a2d3e185dd16f1d9d0ac4d60894018231b9b5b7d28efab0619 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_462ebbcb707a58a2d3e185dd16f1d9d0ac4d60894018231b9b5b7d28efab0619->enter($__internal_462ebbcb707a58a2d3e185dd16f1d9d0ac4d60894018231b9b5b7d28efab0619_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "userEpisode/show.html.twig"));
+        $__internal_4e17567290db1f4bcd5e7e00123e645663d6385a8713a9f19cc226433ef514fa = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4e17567290db1f4bcd5e7e00123e645663d6385a8713a9f19cc226433ef514fa->enter($__internal_4e17567290db1f4bcd5e7e00123e645663d6385a8713a9f19cc226433ef514fa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "userEpisode/show.html.twig"));
 
-        $__internal_0cfc72ff6ee631e24e10d668a206ac2e4e09e03b4c033e2e75cba8f78abdacca = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0cfc72ff6ee631e24e10d668a206ac2e4e09e03b4c033e2e75cba8f78abdacca->enter($__internal_0cfc72ff6ee631e24e10d668a206ac2e4e09e03b4c033e2e75cba8f78abdacca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "userEpisode/show.html.twig"));
+        $__internal_42c978834a6c8bff71fb1391bd4408e0fc178a65019535b5c9bd54124879e5af = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_42c978834a6c8bff71fb1391bd4408e0fc178a65019535b5c9bd54124879e5af->enter($__internal_42c978834a6c8bff71fb1391bd4408e0fc178a65019535b5c9bd54124879e5af_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "userEpisode/show.html.twig"));
 
         // line 1
-        echo "You are watching this episode!";
+        echo "You are watching this episode!
+<li>
+    <a href=\"";
+        // line 3
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_userEpisodeIndex");
+        echo "\">Back to the list</a>
+</li>";
         
-        $__internal_462ebbcb707a58a2d3e185dd16f1d9d0ac4d60894018231b9b5b7d28efab0619->leave($__internal_462ebbcb707a58a2d3e185dd16f1d9d0ac4d60894018231b9b5b7d28efab0619_prof);
+        $__internal_4e17567290db1f4bcd5e7e00123e645663d6385a8713a9f19cc226433ef514fa->leave($__internal_4e17567290db1f4bcd5e7e00123e645663d6385a8713a9f19cc226433ef514fa_prof);
 
         
-        $__internal_0cfc72ff6ee631e24e10d668a206ac2e4e09e03b4c033e2e75cba8f78abdacca->leave($__internal_0cfc72ff6ee631e24e10d668a206ac2e4e09e03b4c033e2e75cba8f78abdacca_prof);
+        $__internal_42c978834a6c8bff71fb1391bd4408e0fc178a65019535b5c9bd54124879e5af->leave($__internal_42c978834a6c8bff71fb1391bd4408e0fc178a65019535b5c9bd54124879e5af_prof);
 
     }
 
@@ -36,9 +42,14 @@ class __TwigTemplate_717d69358ab1ed0da910aea4c05b2a961f3ee516b6a0813b779597e9d4f
         return "userEpisode/show.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  25 => 1,);
+        return array (  29 => 3,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -51,6 +62,9 @@ class __TwigTemplate_717d69358ab1ed0da910aea4c05b2a961f3ee516b6a0813b779597e9d4f
 
     public function getSourceContext()
     {
-        return new Twig_Source("You are watching this episode!", "userEpisode/show.html.twig", "/Users/pro/Desktop/M2/tvseries/app/Resources/views/userEpisode/show.html.twig");
+        return new Twig_Source("You are watching this episode!
+<li>
+    <a href=\"{{ path('_userEpisodeIndex') }}\">Back to the list</a>
+</li>", "userEpisode/show.html.twig", "/Users/pro/Desktop/M2/tvseries/app/Resources/views/userEpisode/show.html.twig");
     }
 }

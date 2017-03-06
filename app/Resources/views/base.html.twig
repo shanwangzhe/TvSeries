@@ -8,10 +8,11 @@
     </head>
     <body>
         <div>
+            <a href = "{{ path('_index') }}">Index</a> |
             {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                 <a href="{{ path('_userEpisodeIndex')}}">
-                    {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
-                </a>
+                    {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}
+                </a> |
                 <a href="{{ path('fos_user_security_logout') }}">
                     {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
                 </a>

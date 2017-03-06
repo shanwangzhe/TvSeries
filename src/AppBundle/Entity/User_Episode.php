@@ -145,8 +145,6 @@ class User_Episode
     public function setWatchedAt($watchedAt)
     {
         $this->watchedAt = $watchedAt;
-
-        return $this;
     }
 
     /**
