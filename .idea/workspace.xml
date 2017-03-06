@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce4ea8da-1c15-4f7f-bd88-fcb29698e5be" name="Default" comment="user_episode delete">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_reereg4m3087bg7lindt0i10j2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_suegml8pfgqcvg9oubr2oem806" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/data.db3" afterPath="$PROJECT_DIR$/app/data.db3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/7/J/vNzp7JXJoXCAvoqHPDT7" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/7/J/vNzp7JXJoXCAvoqHPDT7" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/S/I/U-aZ1QjNN9p1G5aRfLK8" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/S/I/U-aZ1QjNN9p1G5aRfLK8" />
@@ -10,34 +10,18 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Z/9/0hJ1hj4ttLeWg2xwMvMN" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Z/9/0hJ1hj4ttLeWg2xwMvMN" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Z/X/JOt9+JHEA4x02UkuiBt+" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Z/X/JOt9+JHEA4x02UkuiBt+" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/userEpisode/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/userEpisode/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/userEpisode/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/userEpisode/show.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/User_EpisodeController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/User_EpisodeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/User_Episode.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User_Episode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/+/H/h5OdisqpU-bzFopeUmgz" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/+/H/h5OdisqpU-bzFopeUmgz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/+/W/zodXm8vG9m6JQXui678P" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/+/W/zodXm8vG9m6JQXui678P" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/1/J/YWRcwIu+0Qb-OUsI48y+" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/1/J/YWRcwIu+0Qb-OUsI48y+" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/1/R/J5NNsiBrvl6rFpvbOJvQ" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/1/R/J5NNsiBrvl6rFpvbOJvQ" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/6/Z/dKGIsmkEgD2FPxf-Cxxs" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/6/Z/dKGIsmkEgD2FPxf-Cxxs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/C/-/7NL4m9adnjVHNYJMvxTH" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/C/-/7NL4m9adnjVHNYJMvxTH" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/J/E/iK+rs2Qd6wo-kfkbnW7j" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/J/E/iK+rs2Qd6wo-kfkbnW7j" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/-/4/T1Gn-jHeo7fYUYiFaYPL" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/-/4/T1Gn-jHeo7fYUYiFaYPL" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/J/P/OpFErrfQg+r6hIkV6RQw" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/J/P/OpFErrfQg+r6hIkV6RQw" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/K/M/oM32m2e96-Qf1NN7QsaW" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/K/M/oM32m2e96-Qf1NN7QsaW" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Q/8/b4LSLbEgYuA+mlmTwRfK" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Q/8/b4LSLbEgYuA+mlmTwRfK" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Q/E/q1nKC47gypGEBB977wft" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Q/E/q1nKC47gypGEBB977wft" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Q/M/NbssMo3u6GNB2Umlq0GR" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Q/M/NbssMo3u6GNB2Umlq0GR" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Q/Z/qxQUpZIuLFi13PH4nF2n" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Q/Z/qxQUpZIuLFi13PH4nF2n" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/R/L/bgPCIpp-pu4wGf5AUkIm" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/R/L/bgPCIpp-pu4wGf5AUkIm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/S/Z/a-teTeC1Jr4NjhdXsEbT" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/S/Z/a-teTeC1Jr4NjhdXsEbT" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/T/I/ZF0FzsW-Zm-UG1oOyXfR" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/T/I/ZF0FzsW-Zm-UG1oOyXfR" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/U/A/6JcqcReN4k-sDah6MeiW" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/U/A/6JcqcReN4k-sDah6MeiW" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/U/S/MyP1uHBqqBUig+qMTzmB" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/U/S/MyP1uHBqqBUig+qMTzmB" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/44/44d6dbb95514d8fa560948df1e94e0dab0402b0a7fd114dad48ec8c9dee3f863.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/44/44d6dbb95514d8fa560948df1e94e0dab0402b0a7fd114dad48ec8c9dee3f863.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/4b/4bd2b6eae16e76170353c2ca756bc78e55eeb263cdb493873e3db7986143e8e5.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/4b/4bd2b6eae16e76170353c2ca756bc78e55eeb263cdb493873e3db7986143e8e5.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ca/ca7c4a0bc9a51287b97d64ac8a350c17baea5e6890be6a26b9cf32a2d72e5dea.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/ca/ca7c4a0bc9a51287b97d64ac8a350c17baea5e6890be6a26b9cf32a2d72e5dea.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/dc/dca37a2efb272bb052a402c768d4e4aa2034659c2eb3ff3dc9d2147d2c28f42f.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/dc/dca37a2efb272bb052a402c768d4e4aa2034659c2eb3ff3dc9d2147d2c28f42f.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev.log" afterPath="$PROJECT_DIR$/var/logs/dev.log" />
     </list>
     <ignored path="tvseries.iws" />
@@ -59,14 +43,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="User_EpisodeController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="User_EpisodeController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/User_EpisodeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="35" column="70" lean-forward="false" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+            <state relative-caret-position="120">
+              <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
               <folding>
                 <element signature="e#117#151#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EpisodeController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/EpisodeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="73" column="25" lean-forward="false" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,34 +75,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Episode.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Episode.php">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/tvseries/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-960">
-              <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            <state relative-caret-position="15">
+              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EpisodeController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/EpisodeController.php">
+      <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/tvseries/edit.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="73" column="25" lean-forward="false" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TvSeriesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TvSeriesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="69" column="18" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-              <folding>
-                <element signature="e#40#70#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -116,8 +98,8 @@
       <file leaf-file-name="User_Episode.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User_Episode.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="77" column="32" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
+            <state relative-caret-position="225">
+              <caret line="79" column="45" lean-forward="false" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -133,27 +115,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/tvseries/show.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="37" column="13" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="37" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/userEpisode/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="165">
+              <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User_EpisodeRepository.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User_EpisodeRepository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/User_EpisodeRepository.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="177">
@@ -162,6 +134,16 @@
                 <marker date="1488650080000" expanded="true" signature="397:457" ph="SELECT e FRO... AppBundle" />
                 <marker date="1488650080000" expanded="true" signature="684:769" ph="SELECT e FRO... AppBundle" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/episode/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -266,14 +248,14 @@
         <option value="$PROJECT_DIR$/app/Resources/views/admin/index.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/User_EpisodeType.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/EpisodeRepository.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/episode/index.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/User_EpisodeRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/TvSeriesController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/EpisodeController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/User_Episode.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/userEpisode/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/userEpisode/show.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/episode/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/userEpisode/index.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/User_EpisodeController.php" />
       </list>
     </option>
@@ -802,12 +784,12 @@
       <workItem from="1487682255859" duration="8963000" />
       <workItem from="1487959553622" duration="20214000" />
       <workItem from="1488314256324" duration="30414000" />
-      <workItem from="1488729527912" duration="5070000" />
+      <workItem from="1488729527912" duration="6276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71346000" />
+    <option name="totallyTimeSpent" value="72552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -962,13 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/tvseries/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/registration/confirmed.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1064,13 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/tvseries/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-123">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60">
@@ -1125,22 +1093,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/episode/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/EpisodeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="73" column="25" lean-forward="false" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Episode.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-960">
@@ -1175,37 +1127,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User_Episode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="77" column="32" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/userEpisode/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/User_EpisodeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="35" column="70" lean-forward="false" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
-          <folding>
-            <element signature="e#117#151#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1216,6 +1142,64 @@
           <folding>
             <marker date="1488650080000" expanded="true" signature="397:457" ph="SELECT e FRO... AppBundle" />
             <marker date="1488650080000" expanded="true" signature="684:769" ph="SELECT e FRO... AppBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/EpisodeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="73" column="25" lean-forward="false" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/episode/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/tvseries/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/tvseries/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User_Episode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="79" column="45" lean-forward="false" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/userEpisode/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/User_EpisodeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+          <folding>
+            <element signature="e#117#151#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

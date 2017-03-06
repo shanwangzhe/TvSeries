@@ -82,8 +82,9 @@ class User_EpisodeController extends Controller
             $em->persist($userEpisode);
             $em->flush($userEpisode);
         }
-
-        return $this->render('userEpisode/show.html.twig');
+        $image = $em->getRepository('AppBundle:Episode')->find($userEpisode->getEpisode_id())->getImage();
+        return $this->redirect($image);
+        //return $this->render('userEpisode/show.html.twig');
     }
 
     /**
