@@ -2,45 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce4ea8da-1c15-4f7f-bd88-fcb29698e5be" name="Default" comment="user_episode delete">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/backend/episode/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/backend/episode/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/Backend/AdminController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/Backend/EpisodeController.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_1m822uvr69khr2b32vfoi6meo2" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/admin/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/backend/tvseries/index.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/episode/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/backend/episode/new.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/episode/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/backend/episode/show.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/tvseries/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/backend/tvseries/edit.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/tvseries/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/backend/tvseries/new.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/tvseries/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/backend/tvseries/show.html.twig" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_v94s2e3mslrc6huuhtkkesuj05" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/data.db3" afterPath="$PROJECT_DIR$/app/data.db3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/1/J/bTyN1rvwJWqNZzqp2w6D" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/1/J/bTyN1rvwJWqNZzqp2w6D" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/7/J/vNzp7JXJoXCAvoqHPDT7" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/7/J/vNzp7JXJoXCAvoqHPDT7" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/S/I/U-aZ1QjNN9p1G5aRfLK8" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/S/I/U-aZ1QjNN9p1G5aRfLK8" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/S/S/4jIzsCrW4wKKzb-Djkp8" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/S/S/4jIzsCrW4wKKzb-Djkp8" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/V/W/xUFYxXW9NXjDOFKxvEXc" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/V/W/xUFYxXW9NXjDOFKxvEXc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Z/9/0hJ1hj4ttLeWg2xwMvMN" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Z/9/0hJ1hj4ttLeWg2xwMvMN" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Z/X/JOt9+JHEA4x02UkuiBt+" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Z/X/JOt9+JHEA4x02UkuiBt+" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/episode/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/episode/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/A/W/pWowK1X+V-+JqrMMX7nx" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/A/W/pWowK1X+V-+JqrMMX7nx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/B/0/lnD5WhpHKSzjosTOq6r8" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/B/0/lnD5WhpHKSzjosTOq6r8" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/J/P/OpFErrfQg+r6hIkV6RQw" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/J/P/OpFErrfQg+r6hIkV6RQw" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/K/M/oM32m2e96-Qf1NN7QsaW" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/K/M/oM32m2e96-Qf1NN7QsaW" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Q/M/NbssMo3u6GNB2Umlq0GR" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Q/M/NbssMo3u6GNB2Umlq0GR" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/R/L/bgPCIpp-pu4wGf5AUkIm" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/R/L/bgPCIpp-pu4wGf5AUkIm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/S/Z/a-teTeC1Jr4NjhdXsEbT" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/S/Z/a-teTeC1Jr4NjhdXsEbT" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/X/T/b+lBMrqZaWzJniS2Tik0" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/X/T/b+lBMrqZaWzJniS2Tik0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Y/B/ZSL4pDx2zkU3YCHmqgV6" afterPath="$PROJECT_DIR$/var/cache/dev/pools/SVSpmfcyNZ/Y/B/ZSL4pDx2zkU3YCHmqgV6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/backend/tvseries/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/backend/tvseries/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/6d/6dc46b93f5027812d1317a8bcdd5229e1c10a9ed8d30273940e97d5ab8371cd2.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/6d/6dc46b93f5027812d1317a8bcdd5229e1c10a9ed8d30273940e97d5ab8371cd2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev.log" afterPath="$PROJECT_DIR$/var/logs/dev.log" />
     </list>
     <ignored path="tvseries.iws" />
@@ -117,16 +83,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EpisodeType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/EpisodeType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="13" column="56" lean-forward="false" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/backend/episode/new.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -137,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/backend/episode/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="585">
               <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
               <folding />
             </state>
@@ -160,8 +116,18 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/backend/episode/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
+            <state relative-caret-position="360">
               <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/backend/tvseries/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -284,6 +250,7 @@
         <option value="$PROJECT_DIR$/app/Resources/views/backend/episode/edit.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/backend/episode/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/backend/episode/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/backend/tvseries/index.html.twig" />
       </list>
     </option>
   </component>
@@ -898,12 +865,12 @@
       <workItem from="1487682255859" duration="8963000" />
       <workItem from="1487959553622" duration="20214000" />
       <workItem from="1488314256324" duration="30414000" />
-      <workItem from="1488729527912" duration="10508000" />
+      <workItem from="1488729527912" duration="10772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76784000" />
+    <option name="totallyTimeSpent" value="77048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1226,14 +1193,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/backend/tvseries/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="40" column="9" lean-forward="false" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/backend/tvseries/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1311,14 +1270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/backend/episode/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/backend/episode/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1329,8 +1280,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/backend/episode/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="585">
           <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/backend/episode/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/backend/tvseries/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding />
         </state>
       </provider>

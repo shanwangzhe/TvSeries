@@ -21,29 +21,29 @@ class __TwigTemplate_a481d8da0053880a2e28229da63574cbf240d7e363f39e1031e697efd23
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_137ff29579e7579a33bff82c565e7a070b233a7de6066e6747f2399f389742e0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_137ff29579e7579a33bff82c565e7a070b233a7de6066e6747f2399f389742e0->enter($__internal_137ff29579e7579a33bff82c565e7a070b233a7de6066e6747f2399f389742e0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "backend/episode/show.html.twig"));
+        $__internal_f8108295f15a0104dfda7ff0ad19a36f97b37b44718de4ffc091da747f8001b5 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f8108295f15a0104dfda7ff0ad19a36f97b37b44718de4ffc091da747f8001b5->enter($__internal_f8108295f15a0104dfda7ff0ad19a36f97b37b44718de4ffc091da747f8001b5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "backend/episode/show.html.twig"));
 
-        $__internal_a859ad32b4e8ffbc466a48e2ffeb74e9b0b17abe33f6bd9c3a4943357764b2bd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a859ad32b4e8ffbc466a48e2ffeb74e9b0b17abe33f6bd9c3a4943357764b2bd->enter($__internal_a859ad32b4e8ffbc466a48e2ffeb74e9b0b17abe33f6bd9c3a4943357764b2bd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "backend/episode/show.html.twig"));
+        $__internal_8e61ea3710fbf6e870917de7340fcd27940c60daa1988e5174cb72f748cdf5f7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8e61ea3710fbf6e870917de7340fcd27940c60daa1988e5174cb72f748cdf5f7->enter($__internal_8e61ea3710fbf6e870917de7340fcd27940c60daa1988e5174cb72f748cdf5f7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "backend/episode/show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_137ff29579e7579a33bff82c565e7a070b233a7de6066e6747f2399f389742e0->leave($__internal_137ff29579e7579a33bff82c565e7a070b233a7de6066e6747f2399f389742e0_prof);
+        $__internal_f8108295f15a0104dfda7ff0ad19a36f97b37b44718de4ffc091da747f8001b5->leave($__internal_f8108295f15a0104dfda7ff0ad19a36f97b37b44718de4ffc091da747f8001b5_prof);
 
         
-        $__internal_a859ad32b4e8ffbc466a48e2ffeb74e9b0b17abe33f6bd9c3a4943357764b2bd->leave($__internal_a859ad32b4e8ffbc466a48e2ffeb74e9b0b17abe33f6bd9c3a4943357764b2bd_prof);
+        $__internal_8e61ea3710fbf6e870917de7340fcd27940c60daa1988e5174cb72f748cdf5f7->leave($__internal_8e61ea3710fbf6e870917de7340fcd27940c60daa1988e5174cb72f748cdf5f7_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_a9f684fc4d149153b8fa042f64b67cf080a72bc3f575db6c94596e555be554e8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_a9f684fc4d149153b8fa042f64b67cf080a72bc3f575db6c94596e555be554e8->enter($__internal_a9f684fc4d149153b8fa042f64b67cf080a72bc3f575db6c94596e555be554e8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_1bb5545030ea3732caa813cce236bcd63ca5b53f7d6739f6ce5631278f9e7ab2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_1bb5545030ea3732caa813cce236bcd63ca5b53f7d6739f6ce5631278f9e7ab2->enter($__internal_1bb5545030ea3732caa813cce236bcd63ca5b53f7d6739f6ce5631278f9e7ab2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_34453f05853e08ad088939f0f14c56a4946b7a0616be760cb3fa68c5ebc143df = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_34453f05853e08ad088939f0f14c56a4946b7a0616be760cb3fa68c5ebc143df->enter($__internal_34453f05853e08ad088939f0f14c56a4946b7a0616be760cb3fa68c5ebc143df_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_efde57eac70fefc865af3952b4de2bda0b821c209f509997b01dadcfe65d4972 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_efde57eac70fefc865af3952b4de2bda0b821c209f509997b01dadcfe65d4972->enter($__internal_efde57eac70fefc865af3952b4de2bda0b821c209f509997b01dadcfe65d4972_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <h1>";
@@ -87,13 +87,13 @@ class __TwigTemplate_a481d8da0053880a2e28229da63574cbf240d7e363f39e1031e697efd23
         <li>
             <a href=\"";
         // line 29
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_episodeIndex", array("id" => $this->getAttribute(($context["tvSeries"] ?? $this->getContext($context, "tvSeries")), "tvSeriesId", array()))), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_AEIndex", array("id" => $this->getAttribute(($context["tvSeries"] ?? $this->getContext($context, "tvSeries")), "tvSeriesId", array()))), "html", null, true);
         echo "\">Back to the list</a>
         </li>
         <li>
             <a href=\"";
         // line 32
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_episodeEdit", array("id" => $this->getAttribute(($context["tvSeries"] ?? $this->getContext($context, "tvSeries")), "id", array()))), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_AEEdit", array("id" => $this->getAttribute(($context["tvSeries"] ?? $this->getContext($context, "tvSeries")), "id", array()))), "html", null, true);
         echo "\">Edit</a>
         </li>
         <li>
@@ -110,10 +110,10 @@ class __TwigTemplate_a481d8da0053880a2e28229da63574cbf240d7e363f39e1031e697efd23
     </ul>
 ";
         
-        $__internal_34453f05853e08ad088939f0f14c56a4946b7a0616be760cb3fa68c5ebc143df->leave($__internal_34453f05853e08ad088939f0f14c56a4946b7a0616be760cb3fa68c5ebc143df_prof);
+        $__internal_efde57eac70fefc865af3952b4de2bda0b821c209f509997b01dadcfe65d4972->leave($__internal_efde57eac70fefc865af3952b4de2bda0b821c209f509997b01dadcfe65d4972_prof);
 
         
-        $__internal_a9f684fc4d149153b8fa042f64b67cf080a72bc3f575db6c94596e555be554e8->leave($__internal_a9f684fc4d149153b8fa042f64b67cf080a72bc3f575db6c94596e555be554e8_prof);
+        $__internal_1bb5545030ea3732caa813cce236bcd63ca5b53f7d6739f6ce5631278f9e7ab2->leave($__internal_1bb5545030ea3732caa813cce236bcd63ca5b53f7d6739f6ce5631278f9e7ab2_prof);
 
     }
 
@@ -170,10 +170,10 @@ class __TwigTemplate_a481d8da0053880a2e28229da63574cbf240d7e363f39e1031e697efd23
 
     <ul>
         <li>
-            <a href=\"{{ path('_episodeIndex',{'id':tvSeries.tvSeriesId}) }}\">Back to the list</a>
+            <a href=\"{{ path('_AEIndex',{'id':tvSeries.tvSeriesId}) }}\">Back to the list</a>
         </li>
         <li>
-            <a href=\"{{ path('_episodeEdit', { 'id': tvSeries.id }) }}\">Edit</a>
+            <a href=\"{{ path('_AEEdit', { 'id': tvSeries.id }) }}\">Edit</a>
         </li>
         <li>
             {{ form_start(delete_form) }}

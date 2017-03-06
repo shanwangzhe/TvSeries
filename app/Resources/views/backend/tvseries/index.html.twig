@@ -18,7 +18,7 @@
         <tbody>
         {% for tvSeries in tvSeries %}
             <tr>
-                <td><a href="{{ path('_episodeIndex', { 'id': tvSeries.id }) }}">{{ tvSeries.name }}</a></td>
+                <td><a href="{{ path('_AEIndex', { 'id': tvSeries.id }) }}">{{ tvSeries.name }}</a></td>
                 <td>{{ tvSeries.author }}</td>
                 <td>{% if tvSeries.releasedAt %}{{ tvSeries.releasedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{{ tvSeries.description }}</td>
