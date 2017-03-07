@@ -59,7 +59,7 @@ class EpisodeController extends Controller
             $em->persist($episode);
             $em->flush($episode);
 
-            return $this->redirectToRoute('_episodeShow', array('id' => $episode->getId()));
+            return $this->redirectToRoute('_AEShow', array('id' => $episode->getId()));
         }
 
         return $this->render('backend/episode/new.html.twig', array(
@@ -83,7 +83,7 @@ class EpisodeController extends Controller
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('_episodeEdit', array('id' => $episode->getId()));
+            return $this->redirectToRoute('_AEEdit', array('id' => $episode->getId()));
         }
 
         return $this->render('backend/episode/edit.html.twig', array(
@@ -119,6 +119,7 @@ class EpisodeController extends Controller
      */
     public function deleteAction(Request $request, Episode $episode)
     {
+        $id = $episode->getTvSeriesId();
         $form = $this->createDeleteForm($episode);
         $form->handleRequest($request);
 
@@ -128,7 +129,7 @@ class EpisodeController extends Controller
             $em->flush($episode);
         }
 
-        return $this->redirectToRoute('_episodeIndex');
+        return $this->redirectToRoute('_AEIndex',array('id' => $id));
     }
 
     /**
@@ -141,7 +142,7 @@ class EpisodeController extends Controller
     private function createDeleteForm(Episode $episode)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('_delete', array('id' => $episode->getId())))
+            ->setAction($this->generateUrl('_AEDelete', array('id' => $episode->getId())))
             ->setMethod('DELETE')
             ->getForm()
             ;

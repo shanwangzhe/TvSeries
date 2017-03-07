@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'backend.html.twig' %}
 
 {% block body %}
     <h1>{{ tv.name }} Episode list</h1>
@@ -18,7 +18,7 @@
                 <td>{{ e.name }}</td>
                 <td>{{ e.episodeNumber }}</td>
                 <td>{{ e.description }}</td>
-                <td>{{ e.image }}</td>
+                <td><a href={{ e.image }}>{{ e.image }}</a></td>
                 <td>
                     <ul>
                         <li>
@@ -33,7 +33,7 @@
 
     <ul>
         <li>
-            <a href="{{ path('_episodeNew',{'id':tv.id})  }}">Create a new Episode</a>
+            <a href="{{ path('_AENew',{'id':tv.id})  }}">Create a new Episode</a>
         </li>
     </ul>
 {% endblock %}

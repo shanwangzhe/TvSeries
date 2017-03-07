@@ -8,7 +8,7 @@ class __TwigTemplate_2473ec0f93b8646a7abef1a89930659a0aedf86ce549896dfc81870a570
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("base.html.twig", "backend/tvseries/new.html.twig", 1);
+        $this->parent = $this->loadTemplate("backend.html.twig", "backend/tvseries/new.html.twig", 1);
         $this->blocks = array(
             'body' => array($this, 'block_body'),
         );
@@ -16,34 +16,34 @@ class __TwigTemplate_2473ec0f93b8646a7abef1a89930659a0aedf86ce549896dfc81870a570
 
     protected function doGetParent(array $context)
     {
-        return "base.html.twig";
+        return "backend.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6c6f7d3cd2615be05d641c815155ad17b41c35746346f4aaee91353823d48330 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6c6f7d3cd2615be05d641c815155ad17b41c35746346f4aaee91353823d48330->enter($__internal_6c6f7d3cd2615be05d641c815155ad17b41c35746346f4aaee91353823d48330_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "backend/tvseries/new.html.twig"));
+        $__internal_4aa59c67aed5dd5537fbf6fc11c4dc29de9349db2304c0bd6c6cac069899a103 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4aa59c67aed5dd5537fbf6fc11c4dc29de9349db2304c0bd6c6cac069899a103->enter($__internal_4aa59c67aed5dd5537fbf6fc11c4dc29de9349db2304c0bd6c6cac069899a103_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "backend/tvseries/new.html.twig"));
 
-        $__internal_bf77f4daf3bcc697380978a0c3421716ec51be2ed1dac1a6adc440e5d35e15a4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_bf77f4daf3bcc697380978a0c3421716ec51be2ed1dac1a6adc440e5d35e15a4->enter($__internal_bf77f4daf3bcc697380978a0c3421716ec51be2ed1dac1a6adc440e5d35e15a4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "backend/tvseries/new.html.twig"));
+        $__internal_a2874260440e9ad2f2a3221d2e0c51ad25e49cb692493faeafe338d7dd7ac805 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a2874260440e9ad2f2a3221d2e0c51ad25e49cb692493faeafe338d7dd7ac805->enter($__internal_a2874260440e9ad2f2a3221d2e0c51ad25e49cb692493faeafe338d7dd7ac805_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "backend/tvseries/new.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_6c6f7d3cd2615be05d641c815155ad17b41c35746346f4aaee91353823d48330->leave($__internal_6c6f7d3cd2615be05d641c815155ad17b41c35746346f4aaee91353823d48330_prof);
+        $__internal_4aa59c67aed5dd5537fbf6fc11c4dc29de9349db2304c0bd6c6cac069899a103->leave($__internal_4aa59c67aed5dd5537fbf6fc11c4dc29de9349db2304c0bd6c6cac069899a103_prof);
 
         
-        $__internal_bf77f4daf3bcc697380978a0c3421716ec51be2ed1dac1a6adc440e5d35e15a4->leave($__internal_bf77f4daf3bcc697380978a0c3421716ec51be2ed1dac1a6adc440e5d35e15a4_prof);
+        $__internal_a2874260440e9ad2f2a3221d2e0c51ad25e49cb692493faeafe338d7dd7ac805->leave($__internal_a2874260440e9ad2f2a3221d2e0c51ad25e49cb692493faeafe338d7dd7ac805_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_89362b2884319c49599517dcd815b47ad5fd93bb7e4b03d40a024cf61ddf570e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_89362b2884319c49599517dcd815b47ad5fd93bb7e4b03d40a024cf61ddf570e->enter($__internal_89362b2884319c49599517dcd815b47ad5fd93bb7e4b03d40a024cf61ddf570e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_7239bcde6047877b60f89f35deb63bb11fa6371f1c7ccd3db9f56c6f5fb68470 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_7239bcde6047877b60f89f35deb63bb11fa6371f1c7ccd3db9f56c6f5fb68470->enter($__internal_7239bcde6047877b60f89f35deb63bb11fa6371f1c7ccd3db9f56c6f5fb68470_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_117f8b32aaf829da38e1f507185d376d08a74d3b6de4ee1d0b3517409af86bb9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_117f8b32aaf829da38e1f507185d376d08a74d3b6de4ee1d0b3517409af86bb9->enter($__internal_117f8b32aaf829da38e1f507185d376d08a74d3b6de4ee1d0b3517409af86bb9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_79548d6f1ae2890150d57449ba05b144d64649fb8d712a41435b0bcfb33c7cde = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_79548d6f1ae2890150d57449ba05b144d64649fb8d712a41435b0bcfb33c7cde->enter($__internal_79548d6f1ae2890150d57449ba05b144d64649fb8d712a41435b0bcfb33c7cde_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <h1>Tvseries creation</h1>
@@ -72,10 +72,10 @@ class __TwigTemplate_2473ec0f93b8646a7abef1a89930659a0aedf86ce549896dfc81870a570
     </ul>
 ";
         
-        $__internal_117f8b32aaf829da38e1f507185d376d08a74d3b6de4ee1d0b3517409af86bb9->leave($__internal_117f8b32aaf829da38e1f507185d376d08a74d3b6de4ee1d0b3517409af86bb9_prof);
+        $__internal_79548d6f1ae2890150d57449ba05b144d64649fb8d712a41435b0bcfb33c7cde->leave($__internal_79548d6f1ae2890150d57449ba05b144d64649fb8d712a41435b0bcfb33c7cde_prof);
 
         
-        $__internal_89362b2884319c49599517dcd815b47ad5fd93bb7e4b03d40a024cf61ddf570e->leave($__internal_89362b2884319c49599517dcd815b47ad5fd93bb7e4b03d40a024cf61ddf570e_prof);
+        $__internal_7239bcde6047877b60f89f35deb63bb11fa6371f1c7ccd3db9f56c6f5fb68470->leave($__internal_7239bcde6047877b60f89f35deb63bb11fa6371f1c7ccd3db9f56c6f5fb68470_prof);
 
     }
 
@@ -104,7 +104,7 @@ class __TwigTemplate_2473ec0f93b8646a7abef1a89930659a0aedf86ce549896dfc81870a570
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% extends 'base.html.twig' %}
+        return new Twig_Source("{% extends 'backend.html.twig' %}
 
 {% block body %}
     <h1>Tvseries creation</h1>
@@ -120,6 +120,6 @@ class __TwigTemplate_2473ec0f93b8646a7abef1a89930659a0aedf86ce549896dfc81870a570
         </li>
     </ul>
 {% endblock %}
-", "backend/tvseries/new.html.twig", "/Users/pro/Desktop/M2/tvseries/app/Resources/views/backend/tvseries/new.html.twig");
+", "backend/tvseries/new.html.twig", "/Users/pro/Desktop/test/tvseries/app/Resources/views/backend/tvseries/new.html.twig");
     }
 }
