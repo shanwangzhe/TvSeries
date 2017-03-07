@@ -9,25 +9,16 @@
             <th>Name</th>
             <th>EpisodeNumber</th>
             <th>Description</th>
-            <th>Image</th>
             <th>watchedAt</th>
         </tr>
         </thead>
         <tbody>
         {% for e in userEpisodes %}
             <tr>
-                <td>{{ e.name }}</td>
+                <td><a href="{{ path('_userEpisodeNew', { 'id': e.episode_id }) }}">{{ e.name }}</a></td>
                 <td>{{ e.episodeNumber }}</td>
                 <td>{{ e.description }}</td>
-                <td>{{ e.image }}</td>
                 <td>{{ e.watched }}</td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('_userEpisodeNew', { 'id': e.episode_id }) }}">watch</a>
-                        </li>
-                    </ul>
-                </td>
                 <td>
                     <ul>
                         <li>

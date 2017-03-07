@@ -291,55 +291,16 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
         not_fos_user_change_password:
 
-        // app_default_createseries
-        if ($pathinfo === '/series/create') {
-            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::createSeriesAction',  '_route' => 'app_default_createseries',);
+        // _episodeIndex
+        if (0 === strpos($pathinfo, '/episode') && preg_match('#^/episode/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not__episodeIndex;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => '_episodeIndex')), array (  '_controller' => 'AppBundle\\Controller\\EpisodeController::listAction',));
         }
-
-        // app_default_list
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'app_default_list');
-            }
-
-            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::listAction',  '_route' => 'app_default_list',);
-        }
-
-        if (0 === strpos($pathinfo, '/episode')) {
-            // _episodeIndex
-            if (preg_match('#^/episode/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                    $allow = array_merge($allow, array('GET', 'HEAD'));
-                    goto not__episodeIndex;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => '_episodeIndex')), array (  '_controller' => 'AppBundle\\Controller\\EpisodeController::listAction',));
-            }
-            not__episodeIndex:
-
-            // _episodeNew
-            if (preg_match('#^/episode/(?P<id>[^/]++)/new$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
-                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
-                    goto not__episodeNew;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => '_episodeNew')), array (  '_controller' => 'AppBundle\\Controller\\EpisodeController::newAction',));
-            }
-            not__episodeNew:
-
-            // _episodeShow
-            if (preg_match('#^/episode/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                    $allow = array_merge($allow, array('GET', 'HEAD'));
-                    goto not__episodeShow;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => '_episodeShow')), array (  '_controller' => 'AppBundle\\Controller\\EpisodeController::showAction',));
-            }
-            not__episodeShow:
-
-        }
+        not__episodeIndex:
 
         // user_registration
         if ($pathinfo === '/register') {

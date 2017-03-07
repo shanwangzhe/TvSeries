@@ -31,7 +31,7 @@ class User_EpisodeController extends Controller
     {
         $user = $this->getUser();
         $userId = $user->getId();
-        $em = $this->getDoctrine();//->getManager();
+        $em = $this->getDoctrine();
 
         $userEpisodes = $em->getRepository('AppBundle:User_Episode')->findByUser($userId);
         $infos = array();
@@ -62,10 +62,11 @@ class User_EpisodeController extends Controller
     public function newAction($id)
     {
         $user = $this->getUser();
+        $em = $this->getDoctrine();
+
         if ($user!= null) {
             $userId = $user->getId();
             //if user has watched this episode before, update
-            $em = $this->getDoctrine();
             $userEpisode = $em->getRepository('AppBundle:User_Episode')->findByUserEpisode($userId,$id);
             if($userEpisode == null) {
                 $userEpisode = new User_Episode();
@@ -82,7 +83,7 @@ class User_EpisodeController extends Controller
             $em->persist($userEpisode);
             $em->flush($userEpisode);
         }
-        $image = $em->getRepository('AppBundle:Episode')->find($userEpisode->getEpisode_id())->getImage();
+        $image = $em->getRepository('AppBundle:Episode')->find($id)->getImage();//$userEpisode->getEpisode_id()
         return $this->redirect($image);
         //return $this->render('userEpisode/show.html.twig');
     }
