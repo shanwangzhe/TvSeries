@@ -2,8 +2,6 @@
 
 namespace AppBundle\Controller;
 
-use AppBundle\Entity\TvSeries;
-use AppBundle\Form\TvSeriesType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -22,14 +20,19 @@ class TvSeriesController extends Controller
      * @Route("/", name="_index")
      * @Method("GET")
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
-        $em = $this->getDoctrine();
-
-        $tvSeries = $em->getRepository('AppBundle:TvSeries')->findAll();
-
+        $em = $this->getDoctrine()->getManager();
+        $dql   = "SELECT tv FROM AppBundle:TvSeries tv";
+        $query = $em->createQuery($dql);
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $query,
+            $request->query->getInt('page', 1)/*page number*/,
+            5/*limit per page*/
+        );
         return $this->render('tvseries/index.html.twig', array(
-            'tvSeries' => $tvSeries,
+            'tvSeries' => $pagination,
         ));
     }
 }

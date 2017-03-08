@@ -27,14 +27,19 @@ class AdminController extends Controller
      * @Route("/", name="_adminIndex")
      * @Method("GET")
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
-        $em = $this->getDoctrine();//->getManager();
-
-        $tvSeries = $em->getRepository('AppBundle:TvSeries')->findAll();
-
+        $em = $this->getDoctrine()->getManager();
+        $dql   = "SELECT tv FROM AppBundle:TvSeries tv";
+        $query = $em->createQuery($dql);
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $query,
+            $request->query->getInt('page', 1)/*page number*/,
+            5/*limit per page*/
+        );
         return $this->render('backend/tvseries/index.html.twig', array(
-            'tvSeries' => $tvSeries,
+            'tvSeries' => $pagination,
         ));
     }
 

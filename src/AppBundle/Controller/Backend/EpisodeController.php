@@ -28,15 +28,20 @@ class EpisodeController extends Controller
      * @Route("/{id}", name="_AEIndex")
      * @Method("GET")
      */
-    public function listAction($id)
+    public function listAction(Request $request,$id)
     {
-        $em = $this->getDoctrine();
-
+        $em = $this->getDoctrine()->getManager();
         $tv = $em->getRepository('AppBundle:TvSeries')->find($id);
-        $episodes = $em->getRepository('AppBundle:Episode')->findByTvserie($id);
-
+        $dql   = "SELECT e FROM AppBundle:Episode e WHERE e.tvSeriesId = :id ORDER BY e.episodeNumber ASC";
+        $query = $em->createQuery($dql)->setParameter('id', $id);
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $query,
+            $request->query->getInt('page', 1)/*page number*/,
+            10/*limit per page*/
+        );
         return $this->render('backend/episode/index.html.twig', array(
-            'episodes' => $episodes,
+            'episodes' => $pagination,
             'tv' => $tv,
         ));
     }

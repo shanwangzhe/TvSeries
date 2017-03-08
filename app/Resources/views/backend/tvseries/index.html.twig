@@ -7,7 +7,7 @@
     <table>
         <thead>
         <tr>
-            <th>Name</th>
+            <th>{{ knp_pagination_sortable(tvSeries, 'Name', 'tv.id') }}</th>
             <th>Author</th>
             <th>Releasedat</th>
             <th>Description</th>
@@ -39,4 +39,7 @@
             <a href="{{ path('_new') }}">Create a new tvSeries</a>
         </li>
     </ul>
+    <div class="navigation">
+        {{ knp_pagination_render(tvSeries) }}
+    </div>
 {% endblock %}
